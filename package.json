@@ -1,0 +1,14 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "Code base containing programs for host, presenting and serving Jose Ossorio-Rojas's website. website will be for blogging, contact information, and current development.",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Jose I. Ossorio-Rojas",
+  "license": "ISC"
+}
