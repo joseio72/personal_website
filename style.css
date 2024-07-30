@@ -1,0 +1,36 @@
+#historyTitle {
+  font-size: 40px;
+}
+
+.history_section {
+  background: #fdfeff;
+  border: 4px solid lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  gap: 96px
+}
+
+.part_of_history {
+  width: fit-content;
+  display: grid;
+  background-color: blue;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+}
+
+#photo {
+  aspect-ratio: 1/1;
+  width: 450px;
+  height: 550p;
+  background-size: cover;
+}
+
+
+#photo_S2 {
+  max-width: 450px;
+  max-height: 500px;
+}
