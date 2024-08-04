@@ -10,5 +10,8 @@
     "website"
   ],
   "author": "Jose I. Ossorio-Rojas",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^13.0.3"
+  }
 }
