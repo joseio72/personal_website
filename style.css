@@ -48,7 +48,7 @@ progress::-moz-progress-bar {
   background-color: var(--container_color);
 }
 
-#details_text {
+.details_text {
   line-height: 2em;
 }
 
@@ -198,7 +198,7 @@ h1 {
 .description {
   font-size: 0.9em;
   color: #555;
-  margin-bottom: 25px;
+  margin: 0px 0px 25px 0px;
 }
 
 .title:hover {
