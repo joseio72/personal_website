@@ -1,9 +1,33 @@
 :root {
   --primary-background-color: #fff;
-  --secondary-color: #2ecc71;
+  --container_color: #e1ebef;
   --font-family: 'Arial, sans-serif';
   --header-height: 60px;
   --footer-height: 40px;
+}
+
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  height: 8px;
+  background: #04AA6D;
+  width: 100%;
+  z-index: 1;
+}
+
+progress::-webkit-progress-bar {
+  background: #eee;
+}
+
+progress::-webkit-progress-value {
+  background: #04AA6D;
+}
+
+progress::-moz-progress-bar {
+  background: #04AA6D;
 }
 
 #historyTitle {
@@ -13,24 +37,58 @@
 }
 
 .headshot_container {
-  margin: 50px 1px 50px 1px;
-  padding-top: 50px;
-  background-color: var(--primary-background-color);
+  padding: 50px 100px 50px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50vw;
+  height: 70vh;
+  border: 0px solid;
+  border-radius: 25% 10%;
+  background-color: var(--container_color);
+}
+
+#details_text {
+  line-height: 2em;
+}
+
+.name_picture {
   display: flex;
   flex-direction: column;
+}
+
+.headshot_section {
+  width: auto;
+  height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
-  position: relative;
+}
+
+.details_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.links_container {
+  height: 100px;
+  margin: 50px 0px 0px 0px;
   width: auto;
-  height: auto;
+  gap: 40px;
+}
+
+#logo_links {
+  height: 50px;
+  width: 50px;
+  margin: 0px 5px 0px 5px;
 }
 
 #self_image {
   position: relative;
-  width: 600px;
-  height: auto;
+  width: auto;
+  height: 40vh;
   border-radius: 80%;
+  margin: 10% 150px 15px 0px;
 }
 
 .history_section {
@@ -99,13 +157,21 @@
   margin-bottom: 25px;
 }
 
+.contained_section {
+  margin: 0px 0px 0px 0px;
+  padding: 25px 50px 25px 50px;
+  border-top: 1px solid #e4e2e0;
+  height: 100px;
+  border-bottom: 1px solid #e4e2e0;
+}
+
 .title:hover {
   text-decoration: underline;
 }
 
 .role_options {
   max-width: 800px;
-  margin: 1100px auto;
+  margin: 100px auto;
   border-top: 1px solid #e4e2e0;
   padding: 20px;
   background-color: #fff;
